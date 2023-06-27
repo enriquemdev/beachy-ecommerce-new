@@ -1,5 +1,5 @@
 body {
-    background-color: #FAFAFA;
+    background-color: #fcfcfc;
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
@@ -61,6 +61,9 @@ body {
 
 #sidebar {
     padding: 0;
+
+    /*new*/
+    /* margin-top: 100px !important; */
 }
 
 .container-fluid {
@@ -88,7 +91,8 @@ ul {
 
 /*PAGINA DE PRODUCTOS*/
 #mainContainerProducts {
-    padding-right: 0;
+    padding-right: 12px;
+    
 }
 
 #mainContentContainer{
@@ -106,6 +110,11 @@ ul {
         margin-right: auto; USAR CON MEDIA QUERY PARA CUANDO COOLAPSA Y AMPLIARLO
         */ 
     }
+
+    #mainContainerProducts {
+        padding-right: 0;
+        
+    }
     
 }
 
@@ -114,12 +123,22 @@ ul {
     .imgCarrusel{
         height: 690px;
     }
+
+    #mainContainerProducts {
+        padding-right: 0;
+        
+    }
 }
 
 /*SMALL VIEW*/
 @media(min-width: 576px) and (max-width: 767px){
     .imgCarrusel{
         height: 390px;
+    }
+
+    #mainContainerProducts {
+        padding-right: 0;
+        
     }
 }
 

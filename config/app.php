@@ -1,6 +1,6 @@
 <?php 
-    const SERVERURL = "/beachy/";//http://localhost/ClinicaMed/
-    const SERVERURL2 = "/beachy/";
+    const SERVERURL = "/beachyNEW/";//http://localhost/ClinicaMed/
+    const SERVERURL2 = "/beachyNEW/";
     
     const COMPANY = "Beachy Nicaragua";
 

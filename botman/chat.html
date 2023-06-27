@@ -68,6 +68,26 @@
 
             microfono.addEventListener("click", function(){
                 microfonoBot.style.color = 'gray';
+                
+                /*
+                // Verificar si el navegador es compatible con getUserMedia
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    // Solicitar el permiso para acceder al micrófono
+                    navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(function(stream) {
+                        // Permiso concedido, puedes utilizar el micrófono
+                        console.log('Permiso para acceder al micrófono concedido');
+                        // Aquí puedes realizar las acciones que requieran el uso del micrófono
+                    })
+                    .catch(function(error) {
+                        // Permiso denegado o error al acceder al micrófono
+                        console.log('Error al acceder al micrófono:', error);
+                    });
+                } else {
+                    // El navegador no admite getUserMedia
+                    alert('getUserMedia no es compatible con este navegador');
+                }*/
+  
                 recognizeVoice();
                 
             });

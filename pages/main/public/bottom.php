@@ -113,5 +113,11 @@
     require_once "../dependencias/js/scriptBody.php" ;
 ?>
 
+<style>
+      body {
+        overflow-x: hidden !important;
+      }
+    </style>
+
 </body>
 </html>
