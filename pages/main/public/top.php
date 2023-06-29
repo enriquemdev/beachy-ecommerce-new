@@ -37,6 +37,11 @@ session_start(['name'=>'cliente']);
     
     ?>
 
+    <style>
+      .nav-link {
+        margin: 0;
+      }
+    </style>
     
     
 </head>
@@ -53,13 +58,13 @@ session_start(['name'=>'cliente']);
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a id="linkHome" class="nav-link h4" aria-current="page" href="home.php">HOME</a>
+              <a id="linkHome" class="nav-link h4" aria-current="page" href="home.php">Inicio</a>
             </li>    
             <li class="nav-item">
-              <a id="linkProd"  class="nav-link h4" href="products.php">PRODUCTOS</a>
+              <a id="linkProd"  class="nav-link h4" href="products.php">Productos</a>
             </li>
             <li class="nav-item">
-              <a id="linkAcerca" class="nav-link h4 " href="acerca.php">ACERCA</a>
+              <a id="linkAcerca" class="nav-link h4 " href="acerca.php">Acerca de</a>
             </li>
             <li class="nav-item nav-item-icon">
               <a id="linkCart" class="nav-link " href="car.php"><i class="fa-solid fa-cart-shopping"></i></a>

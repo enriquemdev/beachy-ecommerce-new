@@ -66,6 +66,20 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
         padding-left: 0px !important;
     }
 
+    .profundidad {
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .profundidad_animado {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .profundidad_animado:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        transform: scale(1.03);
+    }
+
     @media (max-width: 576px) {
 
         /* Estilos para dispositivos móviles */
@@ -83,7 +97,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
     <div class="row">
 
         <div class="col-0 col-sm-3 ps-2 ps-sm-4 sidebar-mob" id="sidebar" style="margin-top: 100px">
-            <div class="accordion" id="accordionExample">
+            <div class="accordion profundidad" id="accordionExample">
                 <form action="" method="GET" id="">
 
                     <button type="submit" href="#" class="nav-link active w-100" aria-current="page" id="boton-filtrar" style="display: none;">
@@ -435,8 +449,8 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                     if ($listaProducto != 0) {
                         foreach ($listaProducto as $rows) { ?>
 
-                            <div class="col producto camiseta XS mlarga">
-                                <div class="card h-100 text-center">
+                            <div class="col producto camiseta XS mlarga ">
+                                <div class="card h-100 text-center profundidad_animado">
                                     <img src="../img/imgProductos/<?= $rows['codigoEstilo'] ?>/main.jpeg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title"><?= $rows['descripcionProducto'] ?></h5>
