@@ -2,7 +2,7 @@
 require_once "main/public/top.php";
 ?>
       <!-- CONTENIDO -->
-      <section class="h-100" style="background-color: #eee; padding-top: 50px;">
+      <section class="h-100" style=" padding-top: 50px;">
         <div class="container h-100 py-5">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-10">
@@ -15,7 +15,7 @@ require_once "main/public/top.php";
                 </div>
               </div>
       
-              <div class="card rounded-3 mb-4">
+              <div class="card rounded-3 mb-4 profundidad">
                 <div class="card-body p-4">
                   <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-md-2 col-lg-2 col-xl-2">
@@ -51,7 +51,7 @@ require_once "main/public/top.php";
                 </div>
               </div>
       
-              <div class="card rounded-3 mb-4">
+              <!-- <div class="card rounded-3 mb-4 profundidad">
                 <div class="card-body p-4">
                   <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-md-2 col-lg-2 col-xl-2">
@@ -85,7 +85,7 @@ require_once "main/public/top.php";
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
       
               <div class="card">
                 <div class="card-body">

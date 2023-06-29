@@ -69,6 +69,10 @@ session_start(['name'=>'cliente']);
             <li class="nav-item nav-item-icon">
               <a id="linkCart" class="nav-link " href="car.php"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
+
+            <!-- <li class="nav-item nav-item-icon">
+              <i class="fa-solid fa-cart-shopping js-show-cart"></i>
+            </li> -->
   
             <li class="nav-item nav-item-icon">
               <a id="linkUser" class="nav-link <?=$sesionIniciada ? 'btn-exit-system' : ''?>" href="<?=$sesionIniciada ? '#' : 'login.php'?>">

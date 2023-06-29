@@ -66,20 +66,6 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
         padding-left: 0px !important;
     }
 
-    .profundidad {
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .profundidad_animado {
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-
-    .profundidad_animado:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-        transform: scale(1.03);
-    }
-
     @media (max-width: 576px) {
 
         /* Estilos para dispositivos móviles */
