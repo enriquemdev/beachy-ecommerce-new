@@ -104,7 +104,7 @@ $carrito = $ins_carrito->carrito_usuario_controlador($sesionIniciada, $direccion
                 </div> -->
 
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body d-flex justify-content-center">
                         <a href="checkout.php" style="text-decoration: none; color: black ;">
                             <button type="button" class="btn btn-warning btn-block btn-lg">Proceder al pago</button>
                         </a>
