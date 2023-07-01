@@ -57,8 +57,9 @@ if ($sesionIniciada) {
 
             <ul class="list-group mb-3">
                 <?php
+                $precio_total = 0;
                 if ($carrito != 0) {
-                    $precio_total = 0;
+                    
                     // $firstItem = true;actualizar_cantidad_controlador
                     foreach ($carrito as $rows) {
                         if ((int)$rows['cantidadCarrito'] > (int)$rows['cantidadDisponible']) {
@@ -277,7 +278,7 @@ if ($sesionIniciada) {
                 <!--<button class="btn btn-primary btn-lg btn-block" type="submit">Realizar pago</button>-->
                 <!-- <label for="input"></label>
                 <input class="btn btn-primary btn-lg btn-block hidden" id="input" type="submit" name="submit" value="Comprar"> -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Comprar</button>
+                <button type="submit" class="btn btn-primary btn-block mb-4" <?= ($precio_total <= 0) ? 'disabled' : '' ?>>Comprar</button>
             </form>
 
 
