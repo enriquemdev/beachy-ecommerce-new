@@ -82,10 +82,10 @@ session_start(['name' => 'cliente']);
                 </ul>
 
 
-                <form id="searchBar" class="d-flex"">
+                <!-- <form id="searchBar" class="d-flex"">
                     <input class=" form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                </form>
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
                 <div id="nombreSesion">
                     <h6 style="font-size: 1.15em; color:#454545;"><?php if (isset($_SESSION['nombresCliente'])) {
                                                                         echo "Bienvenido " . ($_SESSION['nombresCliente']);

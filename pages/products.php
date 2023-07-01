@@ -76,11 +76,16 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
         #greaterMainContainer {
             padding-left: 12px !important;
         }
+
+        #mainContentContainer
+        {
+            margin-top: 35px !important;
+        }
     }
 </style>
 
 <div class="container-fluid" id="mainContainerProducts">
-    <div class="row">
+    <div class="row" id="primerElemento" style="margin-top: 62px;">
 
         <div class="col-0 col-sm-3 ps-2 ps-sm-4 sidebar-mob" id="sidebar" style="margin-top: 100px">
             <div class="accordion profundidad" id="accordionExample">

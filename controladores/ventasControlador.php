@@ -27,6 +27,14 @@ class ventasControlador extends ventasModelo
 
     public function ventas_controlador()
     {
+        // $alerta=[
+        //     "Alerta"=>"simple",
+        //     "Titulo"=>"111",
+        //     "Texto"=>"ddd",
+        //     "Tipo"=>"error"
+        // ];
+        // echo json_encode($alerta);
+        // exit();
 
         $nombre = mainModel::limpiar_cadena($_POST['nombre']);
         $apellido = mainModel::limpiar_cadena($_POST['apellido']);
@@ -41,8 +49,8 @@ class ventasControlador extends ventasModelo
 
         // $alerta=[
         //     "Alerta"=>"simple",
-        //     "Titulo"=>$producto_carrito,
-        //     "Texto"=>$macAddress."\ ".$talla."\ ".$cantidadVenta."\ ".$sesionIniciada,
+        //     "Titulo"=>"$sesion",
+        //     "Texto"=>"ddd",
         //     "Tipo"=>"error"
         // ];
         // echo json_encode($alerta);
@@ -100,7 +108,7 @@ class ventasControlador extends ventasModelo
         ventasModelo::agregar_venta_modelo($datos_venta);
 
         if ($sesion == 1) {
-            $id_venta = "SELECT MAX(idVenta) AS max_id FROM tblventas WHERE idUsuario = '$idCliente'";
+            $id_venta = "SELECT MAX(idVenta) AS max_id FROM tblventas WHERE usuarioVenta = '$idCliente'";
             $id_venta = $conexion->query($id_venta);
 
             if ($id_venta->rowCount() > 0) {

@@ -113,14 +113,14 @@ if ($sesionIniciada) {
             <input type="hidden" name="total_price" value="<?= $precio_total ?>">
                 <div class="mb-3">
                     <label for="firstName">Primeros nombres</label>
-                    <input type="text" name="nombre" class="form-control" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{3,100}" id="firstName" placeholder="" value="<?= $sesionIniciada ? $usuario['nombres'] : '' ?>" required <?= $sesionIniciada ? 'disabled' : '' ?>>
+                    <input type="text" name="nombre" class="form-control" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{3,100}" id="firstName" placeholder="" value="<?= $sesionIniciada ? $usuario['nombres'] : '' ?>" required <?= $sesionIniciada ? 'readonly' : '' ?>>
                     <div class="invalid-feedback">
                         Nombre ingresado no valido.
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="lastName">Apellidos</label>
-                    <input type="text" name="apellido" class="form-control" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{3,100}" id="lastName" placeholder="" value="<?= $sesionIniciada ? $usuario['apellidos'] : '' ?>" required <?= $sesionIniciada ? 'disabled' : '' ?>>
+                    <input type="text" name="apellido" class="form-control" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{3,100}" id="lastName" placeholder="" value="<?= $sesionIniciada ? $usuario['apellidos'] : '' ?>" required <?= $sesionIniciada ? 'readonly' : '' ?>>
                     <div class="invalid-feedback">
                         Apellido ingreado no valido.
                     </div>
@@ -142,7 +142,7 @@ if ($sesionIniciada) {
 
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="you@ejemplo.com" value="<?= $sesionIniciada ? $usuario['email'] : '' ?>" required <?= $sesionIniciada ? 'disabled' : '' ?>>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="you@ejemplo.com" value="<?= $sesionIniciada ? $usuario['email'] : '' ?>" required <?= $sesionIniciada ? 'readonly' : '' ?>>
                     <div class="invalid-feedback">
                         Por favor ingrese un email valido para actualizaciones de envío.
                     </div>
@@ -150,7 +150,7 @@ if ($sesionIniciada) {
 
                 <div class="mb-3">
                     <label for="address">Numero de teléfono</label>
-                    <input type="text" name="telefono" class="form-control" pattern="[\d]{8,15}" id="phone" placeholder="78761201" value="<?= $sesionIniciada ? $usuario['telefono'] : '' ?>" required <?= $sesionIniciada ? 'disabled' : '' ?>>
+                    <input type="text" name="telefono" class="form-control" pattern="[\d]{8,15}" id="phone" placeholder="78761201" value="<?= $sesionIniciada ? $usuario['telefono'] : '' ?>" required <?= $sesionIniciada ? 'readonly' : '' ?>>
                     <div class="invalid-feedback">
                         Por favor digite un numero de telefono valido.
                     </div>

@@ -80,7 +80,7 @@ ul {
 }
 
 #primerElemento {
-    min-height: calc(100vh - 348px) !important;
+    min-height: calc(100vh - 230px) !important;
     margin-top: 120px;
 }
 
@@ -213,7 +213,8 @@ ul {
 
 #nombreSesion
 {
-    margin-left: 12px;
+    text-align: center;
+    /* margin-left: 12px; */
     /* margin-right: 5px; */
 }
 
@@ -287,4 +288,11 @@ ul {
 .profundidad_animado:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     transform: scale(1.03);
+}
+
+.anotstyle {
+
+    text-decoration: none !important; /* Quita la decoración de subrayado */
+    color: black !important ; /* Hereda el color del texto del elemento padre */
+
 }

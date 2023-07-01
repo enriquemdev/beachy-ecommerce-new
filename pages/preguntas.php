@@ -2,7 +2,7 @@
 require_once "main/public/top.php";
 ?>
       <!-- CONTENIDO -->
-      <div class="container" style="padding-top: 100px; min-height: 71.5vh;">
+      <div id="primerElemento" class="container" style=" min-height: 71.5vh;">
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <h1>Preguntas frecuentes</h1>
           <div class="accordion-item">

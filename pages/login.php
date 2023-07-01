@@ -13,7 +13,7 @@
     require_once "main/public/top.php";
     ?>
       <!-- CONTENIDO -->
-      <div class="container" style="margin-top: 90px; max-width: 500px; border: 1px rgb(175, 175, 175) solid; border-radius: 10px; padding: 20px; 
+      <div id="primerElemento" class="container" style="margin-top: 90px; max-width: 500px; border: 1px rgb(175, 175, 175) solid; border-radius: 10px; padding: 20px; 
       margin-bottom: 40px;
       background-color: rgba(167, 251, 255, 0.275);">
 
@@ -89,14 +89,14 @@
                 </div> -->
           
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Inicia Sesión</button>
             
             
       
             <!-- Register buttons -->
-            <div class="text-center">
-              <p>Not a member? <a href="#!">Register</a></p>
-            </div>
+            <!-- <div class="text-center">
+              <p>No estas ? <a href="#!">Register</a></p>
+            </div> -->
           </form>
 
         </div>

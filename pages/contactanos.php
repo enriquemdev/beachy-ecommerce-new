@@ -2,7 +2,7 @@
 require_once "main/public/top.php";
 ?>
 
-    <div class="container" style="border: 1px rgb(168, 168, 168) solid ; border-radius: 10px;
+    <div  id="primerElemento" class="container" style="border: 1px rgb(168, 168, 168) solid ; border-radius: 10px;
     padding: 10px;
     margin-top: 90px;
     margin-bottom: 10px;
@@ -77,7 +77,7 @@ require_once "main/public/top.php";
                   </form>
 
                   <div class="text-center text-md-left">
-                      <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                      <a class="btn btn-primary" onclick="validateForm();">Enviar</a>
                   </div>
                   <div class="status"></div>
               </div>
@@ -95,7 +95,7 @@ require_once "main/public/top.php";
                       </li>
 
                       <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                          <p>contact@vinyervines.com</p>
+                          <p>contact@beachynic.com</p>
                       </li>
                   </ul>
               </div>
