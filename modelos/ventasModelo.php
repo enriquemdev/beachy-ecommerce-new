@@ -55,6 +55,16 @@ class ventasModelo extends mainModel
 
         return $sql;
     }
+
+    protected static function restar_vendidos_modelo($datos)
+    {
+        $sql = mainModel::conectar()->prepare("UPDATE tbldetproducto SET cantidadDisponible=(cantidadDisponible - :cantidadVendida)
+        WHERE idDetProducto=:det_producto_id");
+        $sql->bindParam(":cantidadVendida", $datos['cantidadVendida']);
+        $sql->bindParam(":det_producto_id", $datos['det_producto_id']);
+        $sql->execute();
+        return $sql;
+    }
     ////////////////////////////
 
     protected static function actualizar_cantidad_modelo($datos)
@@ -69,22 +79,6 @@ class ventasModelo extends mainModel
     protected static function minun_cart_modelo($datos)
     {
         $sql = mainModel::conectar()->prepare("UPDATE tblcarrito SET cantidad=(cantidad - 1) WHERE id_carrito=:id_carrito");
-        $sql->bindParam(":id_carrito", $datos['id_carrito']);
-        $sql->execute();
-        return $sql;
-    }
-
-    protected static function plus_cart_modelo($datos)
-    {
-        $sql = mainModel::conectar()->prepare("UPDATE tblcarrito SET cantidad=(cantidad + 1) WHERE id_carrito=:id_carrito");
-        $sql->bindParam(":id_carrito", $datos['id_carrito']);
-        $sql->execute();
-        return $sql;
-    }
-
-    protected static function delete_cart_modelo($datos)
-    {
-        $sql = mainModel::conectar()->prepare("DELETE FROM tblcarrito WHERE id_carrito=:id_carrito");
         $sql->bindParam(":id_carrito", $datos['id_carrito']);
         $sql->execute();
         return $sql;

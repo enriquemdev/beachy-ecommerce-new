@@ -162,6 +162,10 @@ class ventasControlador extends ventasModelo
                 "rebajaUnitaria" => 0,
             ];
             ventasModelo::agregar_detventa_modelo($datos_detventa);
+            // $ar = ventasModelo::restar_vendidos_modelo($datos_detventa);
+            $restar_vendidos = "UPDATE tbldetproducto SET cantidadDisponible=(cantidadDisponible - ". $value['cantidad'] .")
+            WHERE idDetProducto=".$value['det_producto_id']."";
+            $restar_vendidos = $conexion->query($restar_vendidos);
         }
 
         if ($sesion == 1) {

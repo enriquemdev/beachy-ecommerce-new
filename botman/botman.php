@@ -182,7 +182,7 @@ $botman->hears('(.*)recomiendas(.*)usar(.*)|recomienda(.*)', function($bot) {
 
 $botman->hears('(.*)tallas(.*)tienes(.*)|talla(.*)', function($bot) {
     $bot->typesAndWaits(1);
-    $bot->reply("Te invito a ver la página, porque nno recuerdo"); 
+    $bot->reply("Te invito a ver la página, porque no recuerdo"); 
 });
 
 
@@ -279,7 +279,7 @@ $botman->hears('(.*)ver(.*)productos(.*)color {color}', function($bot, $color) {
         INNER JOIN catcolores ON tblproducto.colorProducto = catcolores.idColor
         INNER JOIN catcategorias ON tblproducto.categoriaProducto = catcategorias.idCategoria
         INNER JOIN cattela ON tblproducto.telaProducto = cattela.idTela
-        WHERE catcolores.nombreColor = '".$color."'
+        WHERE catcolores.nombreColor LIKE '%".$color."%'
     ";
 
 

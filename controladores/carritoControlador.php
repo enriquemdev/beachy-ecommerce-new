@@ -179,7 +179,7 @@
         {
             if ($sesionIniciada)
             {
-                session_start(['name'=>'cliente']);
+                // session_start(['name'=>'cliente']);
 
                 $consulta="SELECT id_carrito, descripcionProducto, precioProducto, codigoEstilo, nombreTalla,
                 tblcarrito.cantidad as cantidadCarrito, cantidadDisponible, nombreColor FROM tblcarrito
@@ -187,7 +187,8 @@
                 INNER JOIN tblproducto ON tbldetproducto.producto = tblproducto.idProducto
                 INNER JOIN cattallas ON tbldetproducto.tallaProducto = cattallas.idTalla
                 INNER JOIN catcolores ON tblproducto.colorProducto = catcolores.idColor
-                WHERE cliente_id = '".$_SESSION['idCliente']."';
+                WHERE ((cliente_id = '".$_SESSION['idCliente']."')
+                AND (cantidadDisponible > 0));
                 ";
             }
             else
@@ -198,7 +199,8 @@
                 INNER JOIN tblproducto ON tbldetproducto.producto = tblproducto.idProducto
                 INNER JOIN cattallas ON tbldetproducto.tallaProducto = cattallas.idTalla
                 INNER JOIN catcolores ON tblproducto.colorProducto = catcolores.idColor
-                WHERE client_mac = '".$direccionMAC."';
+                WHERE ((client_mac = '".$direccionMAC."')
+                AND (cantidadDisponible > 0));
                 ";
             }
             

@@ -158,7 +158,7 @@ if ($sesionIniciada) {
 
                 <div class="mb-3">
                     <label for="address">Dirección</label>
-                    <input type="text" name="direccion" class="form-control" id="address" placeholder="Managua KM 14, Residencial Villa Asturias, casa #12" required>
+                    <input type="text" name="direccion" class="form-control" id="address" placeholder="Tu dirección" required>
                     <div class="invalid-feedback">
                         Por favor digite una dirección valida.
                     </div>
@@ -239,7 +239,7 @@ if ($sesionIniciada) {
                     </div>
                     <div class="col-md-6">
                         <label for="cc-number">Número de tarjeta</label>
-                        <input type="text" name="num_tarj" class="form-control" pattern="[0-9]{3,20}" id="cc-number" placeholder="" required>
+                        <input type="text" name="num_tarj" class="form-control" pattern="[0-9]{13,18}" id="cc-number" placeholder="" required>
                         <div class="invalid-feedback">
                             Registre un número de tarjeta valido.
                         </div>
@@ -259,7 +259,7 @@ if ($sesionIniciada) {
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="cc-cvv">CVV</label>
-                        <input type="text" class="form-control" pattern="[0-9]{3,4}" id="cc-cvv" placeholder="" required>
+                        <input type="text" class="form-control" pattern="[0-9]{3,4}" id="cc-cvv" placeholder="" maxlength="4" required>
                         <div class="invalid-feedback">
                             Codigo de seguridad válido requerido
                         </div>
