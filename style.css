@@ -4,7 +4,7 @@ body {
     background-color: #fcfcfc;
     max-width: 100% !important;
     overflow-x: hidden !important;
-    /* min-height: 100vh !important; */
+    /* min-height: calc(100vh - 80px); !important; */
     /* font-family: 'Open Sans', sans-serif; */
 }
 
@@ -80,6 +80,7 @@ ul {
 }
 
 #primerElemento {
+    min-height: calc(100vh - 348px) !important;
     margin-top: 120px;
 }
 

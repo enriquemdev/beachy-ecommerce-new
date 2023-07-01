@@ -44,7 +44,7 @@
 
 
 <!-- FOOTER -->
-<footer class=" text-center text-black" style="background-color: #3AF0F7;">
+<footer class=" text-center text-black " style="background-color: #3AF0F7;">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Form -->
