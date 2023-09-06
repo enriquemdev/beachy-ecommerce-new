@@ -1,17 +1,12 @@
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 <?php
-    $peticionAjax = false;
-    require_once "../config/app.php";
-	if(isset($_POST['loginEmailU']) && isset($_POST['loginPassU'])){
-		require_once "../controladores/loginUsuariosControlador.php";
-		$ins_login2=new loginUsuarioControlador();
 
-		echo $ins_login2->iniciar_sesion_cliente_controlador();
-	}?>
+  ?>
     
     <?php
     //require_once "../dependencias/css/link.php" ;
     require_once "main/public/top.php";
+  
     ?>
       <!-- CONTENIDO -->
       <div id="primerElemento" class="container" style="margin-top: 90px; max-width: 500px; border: 1px rgb(175, 175, 175) solid; border-radius: 10px; padding: 20px; 
@@ -295,4 +290,15 @@
 
     <?php
     require_once "main/public/bottom.php";
+
+
+
+    $peticionAjax = false;
+    require_once "../config/app.php";
+	if(isset($_POST['loginEmailU']) && isset($_POST['loginPassU'])){
+		require_once "../controladores/loginUsuariosControlador.php";
+		$ins_login2=new loginUsuarioControlador();
+
+		echo $ins_login2->iniciar_sesion_cliente_controlador();
+	}
     ?>
