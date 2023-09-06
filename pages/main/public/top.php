@@ -97,8 +97,10 @@ session_start(['name' => 'cliente']);
 
     <script>
         let btn_salir = document.querySelector(".btn-exit-system");
-
-        btn_salir.addEventListener('click', function(e) {
+        
+        if (btn_salir != null)
+        {
+            btn_salir.addEventListener('click', function(e) {
             e.preventDefault();
             Swal.fire({
                 title: 'Quieres cerrar sesión?',
@@ -112,9 +114,10 @@ session_start(['name' => 'cliente']);
             }).then((result) => {
                 if (result.value) {
 
-                    let url = '<?php echo SERVERURL; ?>controladores/cerrarSesionUsuarioControlador.php'
-                    let token = '<?php echo $lc->encryption($_SESSION['token']) ?>';
-                    let usuario = '<?php echo $lc->encryption($_SESSION['idCliente']) ?>';
+                    let url = '<?php echo SERVERURL; ?>controladores/cerrarSesionUsuarioControlador.php';
+                    let token = `<?php echo $lc->encryption($_SESSION['token'] ?? "") ?>`;
+let usuario = '<?php echo $lc->encryption($_SESSION['idCliente'] ?? "") ?>';
+
 
                     let datos = new FormData();
                     datos.append("token", token);
@@ -131,6 +134,8 @@ session_start(['name' => 'cliente']);
                 }
             });
         });
+        }
+        
     </script>
 
     <!-- Toasts -->
@@ -169,6 +174,7 @@ session_start(['name' => 'cliente']);
     </div>
 
     <script>
+        
         // Toasts
         let element = document.getElementById("myToast");
 
