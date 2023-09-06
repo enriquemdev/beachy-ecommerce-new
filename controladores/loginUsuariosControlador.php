@@ -22,6 +22,8 @@
                     text: "Campos requeridos no llenados",
                     type: "error",
                     confirmButtonText: "Aceptar"});
+
+                    //alert("El usuario o clave son incorrectos");
                 </script>';
                 exit();
             }
@@ -44,6 +46,8 @@
                     text: "La clave no coincide con el formato solicitado",
                     type: "error",
                     confirmButtonText: "Aceptar"});
+
+                    //alert("El usuario o clave son incorrectos");
                 </script>';
                 exit();
             }
@@ -77,7 +81,10 @@
 
                 $_SESSION['token']=md5(uniqid(mt_rand(),true));
 
-                return header("Location: ".SERVERURL."pages/home.php");//Que pueda ingresar al sistema :D                               
+
+                //return header("Location: ".SERVERURL."pages/home.php");//Que pueda ingresar al sistema :D      
+                // How to do it without header
+                echo '<script language="javascript">window.location.href="'.SERVERURL.'home.php";</script>';                         
  
     
             }else{
@@ -88,6 +95,8 @@
                     text: "El usuario o clave son incorrectos",
                     type: "error",
                     confirmButtonText: "Aceptar"});
+
+                    //alert("El usuario o clave son incorrectos");
                 </script>';
             }
 
