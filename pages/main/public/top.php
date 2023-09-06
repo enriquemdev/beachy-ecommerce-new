@@ -11,7 +11,10 @@ session_start(['name' => 'cliente']);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">\ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <title>Beachy</title>
 
     <?php
@@ -46,7 +49,7 @@ session_start(['name' => 'cliente']);
 
 <body onload="">
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="font-family: 'Inter', sans-serif;">
         <div class="container-fluid" style="background-color: #3AF0F7; margin-bottom: -6px;">
             <a class="navbar-brand" href="home.php">
                 <img src="../img/LOGO SIN FONDO.png" alt="" width="80" height="70">
@@ -55,7 +58,7 @@ session_start(['name' => 'cliente']);
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-styles" id="">
                     <li class="nav-item">
                         <a id="linkHome" class="nav-link h4" aria-current="page" href="home.php">Inicio</a>
                     </li>

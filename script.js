@@ -1,4 +1,4 @@
-document.onclick = evalua;
+/*document.onclick = evalua;
 
 function evalua(e){
     let elementoClicked;
@@ -80,46 +80,47 @@ function evalua(e){
                 }
             }
         }*/
-
+        
+/*
         for (var i = 0; i<productos.length; i++) {
             /*
             productos[i].classList.remove("rojo");
             productos[i].classList.add("verde");*/
-            let flag = true;//Este flag verifica que en cada producto revise si contiene la clase mostrar(true) si no (false)
-            for (item of productos[i].classList){
-                if (item == "mostrar")
-                {
+//             let flag = true;//Este flag verifica que en cada producto revise si contiene la clase mostrar(true) si no (false)
+//             for (item of productos[i].classList){
+//                 if (item == "mostrar")
+//                 {
                     
-                    flag = true;
-                }
-                else{
-                    flag = false;
-                }
-            }
+//                     flag = true;
+//                 }
+//                 else{
+//                     flag = false;
+//                 }
+//             }
 
-            if (flag == false)
-            {
-                productos[i].style.display = 'none';
-            }
-            else
-            {
-                productos[i].style.display = 'block';
-            }
-            /*
-            if (productos[i].classList.contains(startsWith("escondido")))
-            {
-                productos[i].style.display = 'none';
-            }
-            else {
-                productos[i].style.display = 'block';
-            }*/
+//             if (flag == false)
+//             {
+//                 productos[i].style.display = 'none';
+//             }
+//             else
+//             {
+//                 productos[i].style.display = 'block';
+//             }
+//             /*
+//             if (productos[i].classList.contains(startsWith("escondido")))
+//             {
+//                 productos[i].style.display = 'none';
+//             }
+//             else {
+//                 productos[i].style.display = 'block';
+//             }*/
 
 
-        }
+//         }
 
         
 
 
      
-    }   
-}
+//     }   
+// }

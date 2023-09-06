@@ -16,4 +16,4 @@ function sombrear(e){
     e.target.classList.remove("limpiar")
     e.target.classList.add("sombreado")
 }
-
+*/
