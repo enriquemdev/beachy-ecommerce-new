@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php
     $peticionAjax = false;
     require_once "../config/app.php";

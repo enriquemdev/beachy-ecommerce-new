@@ -15,8 +15,8 @@
 		}).then((result) => {
 			if (result.value) {
                 
-                let url = '<?php echo SERVERURL;?>controladores/cerrarSesionControlador.php'
-                let token='<?php echo $lc->encryption($_SESSION['token']) ?>';
+                let url = '<?php echo SERVERURL;?>controladores/cerrarSesionControlador.php';
+                let token=`<?php echo $lc->encryption($_SESSION['token']) ?>`;
                 let usuario='<?php echo $lc->encryption($_SESSION['idEmpleado']) ?>';
 
                 let datos = new FormData();
