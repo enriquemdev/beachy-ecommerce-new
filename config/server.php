@@ -1,12 +1,12 @@
 <?php 
 
-    const SERVER = "localhost";
+    const SERVER = "sql300.260mb.net";
 
-    const DB = "beachybd";
+    const DB = "n260m_34982725_beachybd";
 
-    const USER = "root";
+    const USER = "n260m_34982725";
 
-    const PASS = "";
+    const PASS = "11111111";
 
     const SGDB = "mysql:host=".SERVER.";dbname=".DB;
 
