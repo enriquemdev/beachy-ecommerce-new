@@ -13,7 +13,7 @@ body {
 .navbar {
   padding: 0 !important;
   padding-bottom: 6px !important;
-  border: solid lightgray 0.3px;
+  
 }
 
 .nav-item {
@@ -101,11 +101,6 @@ ul {
 
 #mainContentContainer {
   margin-top: 100px;
-}
-
-/* Cambios Luis */
-.navbar-style li a{
-    background-color: yellow;
 }
 
 

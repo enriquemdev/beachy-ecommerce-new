@@ -70,8 +70,8 @@ require_once "main/public/top.php";
                     <p class="card-text">
                         La camiseta ideal para cada ocasion! Estilo Long-Sleeve.
                     </p>
-
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=1" class="btn btn-primary">Ver</a>
+                    
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=1" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ require_once "main/public/top.php";
                 <div class="card-body">
                     <h5 class="card-title">Vineyard Vines camiseta rosada</h5>
                     <p class="card-text">Un estilo deslumbrante en una maravillosa comodidad.</p>
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=3" class="btn btn-primary">Ver</a>
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=3" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@ require_once "main/public/top.php";
                 <div class="card-body">
                     <h5 class="card-title">Vineyard Vines White Palms</h5>
                     <p class="card-text">La camiseta por excelencia en comodidad y estilo!</p>
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=4" class="btn btn-primary">Ver</a>
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=4" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@ require_once "main/public/top.php";
                 <img src="../img/imgProductos/CamCelStaBro6/main.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Brooks Brothers TShirt Light Blue</h5>
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=6" class="btn btn-primary">Ver</a>
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=6" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@ require_once "main/public/top.php";
                 <img src="../img/imgProductos/AccRojStaVin2/main.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Vineyard Vines Gorra trucker</h5>
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=2" class="btn btn-primary">Ver</a>
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=2" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@ require_once "main/public/top.php";
                 <img src="../img/t (2).png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Red Brooks brother tshirt</h5>
-                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=7" class="btn btn-primary">Ver</a>
+                    <a href="<?= SERVERURL ?>pages/producto.php?codProd=7" class="watch_button">Ver</a>
                 </div>
             </div>
         </div>

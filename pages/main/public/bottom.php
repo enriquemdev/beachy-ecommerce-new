@@ -76,20 +76,20 @@
             </button>
           </div> -->
                     <!--Grid column-->
-                    <div class="col-auto" style="display: inline-flex ; gap: 12px;">
+                    <div class="col-auto footer-links" style="display: inline-flex ; gap: 12px;">
                         <p class="pt-2">
                         <a href="contactanos.php" style=" color: black; text-decoration: none;">
-                            <li style="list-style:circle ; flex-direction: column;  ">
+                            <li style="flex-direction: column;  ">
                                <strong>Contáctanos</strong>
                             </li>
                             </a>
                             <a href="preguntas.php" style=" color: black; text-decoration: none;">
-                            <li style="list-style:circle ; flex-direction: column;">
+                            <li style="flex-direction: column;">
                                <strong>Preguntas Frecuentes</strong>
                             </li>
                             </a>
                             <a href="acerca.php" style=" color: black; text-decoration: none;">
-                                <li style="list-style:circle ; flex-direction: column;">
+                                <li style="flex-direction: column;">
                                     <strong>Acerca de nosotros</strong>
                                 </li>
                             </a>
@@ -115,6 +115,8 @@
 
 <?php
 require_once "../dependencias/js/scriptBody.php";
+//Luis add styles here
+require_once "../dependencias/css/links_luis.php";
 ?>
 
 <style>

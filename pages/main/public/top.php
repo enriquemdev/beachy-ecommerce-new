@@ -50,15 +50,15 @@ session_start(['name' => 'cliente']);
 <body onload="">
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="font-family: 'Inter', sans-serif;">
-        <div class="container-fluid" style="background-color: #3AF0F7; margin-bottom: -6px;">
+        <div class="container-fluid">
             <a class="navbar-brand" href="home.php">
-                <img src="../img/LOGO SIN FONDO.png" alt="" width="80" height="70">
+                <img src="../img/LOGO SIN FONDO.png" alt="Logo Beachy" width="80" height="70">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-styles" id="">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-styles" id="nav-as">
                     <li class="nav-item">
                         <a id="linkHome" class="nav-link h4" aria-current="page" href="home.php">Inicio</a>
                     </li>
