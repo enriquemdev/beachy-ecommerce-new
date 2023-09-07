@@ -14,7 +14,7 @@ require_once "main/public/top.php";
 
         <div class="carousel-item active">
 
-            <div class="carrusel" style="left: 35%;">
+            <div class="carrusel" style="left: 35%; right:10%">
                 <!-- <h1>Shorts de Baño</h1> -->
                 <a class="anotstyle" href="<?= SERVERURL ?>pages/products.php"><button class="btn btn-info">
                         <h5>Ver Productos</h5>
@@ -26,7 +26,7 @@ require_once "main/public/top.php";
 
         <div class="carousel-item">
 
-            <div class="carrusel" style="left: 75%;">
+            <div class="carrusel" style="left: 20%;" id="carousel-2">
                 <a class="anotstyle" href="<?= SERVERURL ?>pages/products.php"><button class="btn btn-info">
                         <h5>Ver Productos</h5>
                     </button></a>
@@ -37,7 +37,7 @@ require_once "main/public/top.php";
 
         <div class="carousel-item">
 
-            <div class="carrusel" style="left: 75%;">
+            <div class="carrusel" style="left: 60%; ">
                 <a class="anotstyle" href="<?= SERVERURL ?>pages/products.php"><button class="btn btn-info">
                         <h5>Ver Productos</h5>
                     </button></a>
