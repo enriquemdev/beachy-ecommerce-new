@@ -106,7 +106,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <h6>Made with <i class="fa-solid fa-heart"></i> by: Enrique Munoz</h6>
+        <h6>Made with <i class="fa-solid fa-heart"></i> by: Codenaut S.A.</h6>
 
     </div>
     <!-- Copyright -->

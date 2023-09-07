@@ -84,7 +84,7 @@
 
                 //return header("Location: ".SERVERURL."pages/home.php");//Que pueda ingresar al sistema :D      
                 // How to do it without header
-                echo '<script language="javascript">window.location.href="'.SERVERURL.'home.php";</script>';                         
+                echo '<script language="javascript">window.location.href="'.SERVERURL.'pages/home.php";</script>';                         
  
     
             }else{

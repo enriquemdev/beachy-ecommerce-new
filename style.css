@@ -208,7 +208,13 @@ ul {
 #nombreSesion {
   text-align: center;
   /* margin-left: 12px; */
-  /* margin-right: 5px; */
+  /* margin
+  
+  -right: 5px; */
+}
+
+#nombreSesion > h6 {
+  margin-bottom: 0px;
 }
 
 /*Luis stuff*/
