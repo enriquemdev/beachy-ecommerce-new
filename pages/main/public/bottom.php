@@ -10,7 +10,7 @@
     console.log(idUsuario);
     var botmanWidget = {
         frameEndpoint: '../botman/chat.html',
-        introMessage: 'Hola! Soy Yuniqua, la representante de servicio al cliente de la  tienda Beachy Nicaragua! Dime en que puedo ayudarte.',
+        introMessage: 'Hola! Soy Yuniqua, la representante de servicio al cliente de la  tienda Beachy Nicaragua! Estoy aqui para ayudarte.',
         chatServer: '../botman/botman.php',
         title: 'Agente Servicio al Cliente: Yuniqua',
         placeholderText: 'Escríbele un mensaje a la agente: Yuniqua',
