@@ -403,7 +403,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                             <ul class="pagination">
 
                                 <li class="page-item <?php if ($paginaActual == 1) {
-                                                            echo "disabled";
+                                                            echo 'disabled" style="display: none;';
                                                         } ?>">
                                     <a <?php if ($paginaActual == 1) {
                                             echo 'tabindex="-1"';
@@ -422,7 +422,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                 }
                                 ?>
                                 <li class="page-item <?php if ($cantPaginas == $paginaActual) {
-                                                            echo "disabled";
+                                                            echo 'disabled" style="display: none;';
                                                         } ?>">
                                     <a <?php if ($cantPaginas == $paginaActual) {
                                             echo 'tabindex="-1"';
@@ -473,7 +473,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                             <ul class="pagination">
 
                                 <li class="page-item <?php if ($paginaActual == 1) {
-                                                            echo "disabled";
+                                                            echo 'disabled" style="display: none;';
                                                         } ?>">
                                     <a <?php if ($paginaActual == 1) {
                                             echo 'tabindex="-1"';
@@ -492,7 +492,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                 }
                                 ?>
                                 <li class="page-item <?php if ($cantPaginas == $paginaActual) {
-                                                            echo "disabled";
+                                                            echo 'disabled" style="display: none;';
                                                         } ?>">
                                     <a <?php if ($cantPaginas == $paginaActual) {
                                             echo 'tabindex="-1"';
