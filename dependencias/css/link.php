@@ -9,11 +9,6 @@
 <link rel="stylesheet" href="<?php echo SERVERURL; ?>dependencias/css/sweetalert2.min.css">
 <link rel="stylesheet" href="<?php echo SERVERURL; ?>style.css">
 
-<!-- fonts  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
 <!-- Sweet Alert V8.13.0 JS file-->
 <script src="<?php echo SERVERURL; ?>dependencias/js/sweetalert2.min.js" ></script>
 <script src="<?php echo SERVERURL; ?>scripts2.js" ></script>

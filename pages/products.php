@@ -77,8 +77,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
             padding-left: 12px !important;
         }
 
-        #mainContentContainer
-        {
+        #mainContentContainer {
             margin-top: 35px !important;
         }
     }
@@ -89,13 +88,13 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
 
         <div class="col-0 col-sm-3 ps-2 ps-sm-4 sidebar-mob" id="sidebar" style="margin-top: 100px">
             <div class="accordion profundidad" id="accordionExample">
-                <form action="" method="GET" id="">
+                <form action="" class="products-filter-form" method="GET" id="">
 
                     <button type="submit" href="#" class="nav-link active w-100" aria-current="page" id="boton-filtrar" style="display: none;">
                         <i class="fa-solid fa-sliders" style="font-size: 25px ;"></i></i> FILTRAR
                     </button>
 
-                    <div class="accordion-item">
+                    <div class="accordion-item" class="filtro-acordion">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 <strong>Filtros</strong>
@@ -124,7 +123,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                                             $categoriasSelec = $_GET['categorias'];
                                                         }
                                                     ?>
-                                                        <li><input type="checkbox" name="categorias[]" value="<?php echo $campo['idCategoria']; ?>" <?php if (in_array($campo['idCategoria'], $categoriasSelec)) {
+                                                        <li><input class="ckbox" type="checkbox" name="categorias[]" value="<?php echo $campo['idCategoria']; ?>" <?php if (in_array($campo['idCategoria'], $categoriasSelec)) {
                                                                                                                                                         echo "checked";
                                                                                                                                                     } ?>>
                                                             <?php echo $campo['nombreCategoria']; ?></li>
@@ -397,7 +396,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
         <div class="col-sm-9 col-12" id='greaterMainContainer'>
             <div class="container" id="mainContentContainer">
                 <div class="row cardTitles">
-                    <h1 id="titulouno">Todos los Productos</h1>
+                    <h1 class="titulo-products" id="titulouno">Todos los Productos</h1>
 
                     <div class="w-100" style="position: relative;" id="divPaginacion">
                         <nav aria-label="Page navigation example" style="float: right;">
@@ -408,7 +407,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                                         } ?>">
                                     <a <?php if ($paginaActual == 1) {
                                             echo 'tabindex="-1"';
-                                        } ?> class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual - 1) ?>">Anterior</a>
+                                        } ?> class="back-button cus-button" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual - 1) ?>"><img src="../img/UI/back-button.png" alt=""><span>Anterior</span></a>
                                 </li>
                                 <?php
                                 for ($i = 1; $i <= $cantPaginas; $i++) {
@@ -416,7 +415,8 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                     <li class="page-item <?php if ($paginaActual == $i) {
                                                                 echo "active";
                                                             } ?>">
-                                        <a class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . $i ?>"><?= $i ?></a>
+
+                                        <a class="page-link num" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . $i ?>"><?= $i ?></a>
                                     </li>
                                 <?php
                                 }
@@ -426,7 +426,7 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                                                         } ?>">
                                     <a <?php if ($cantPaginas == $paginaActual) {
                                             echo 'tabindex="-1"';
-                                        } ?> class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual + 1) ?>">Siguiente</a>
+                                        } ?> class="next-button cus-button" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual + 1) ?>"><Span>Siguiente</Span><img src="../img/UI/next-button.png" alt=""></a>
                                 </li>
                             </ul>
                         </nav>
@@ -469,37 +469,38 @@ $listaDatosCatalogos = $ins_producto->lista_catalogos_cliente_controlador();
                 </div><!--End of cards container-->
 
                 <div class="w-100" style="position: relative;" id="divPaginacion">
-                    <nav aria-label="Page navigation example" style="float: right;">
-                        <ul class="pagination">
+                        <nav aria-label="Page navigation example" style="float: right;">
+                            <ul class="pagination">
 
-                            <li class="page-item <?php if ($paginaActual == 1) {
-                                                        echo "disabled";
-                                                    } ?>">
-                                <a <?php if ($paginaActual == 1) {
-                                        echo 'tabindex="-1"';
-                                    } ?> class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual - 1) ?>">Anterior</a>
-                            </li>
-                            <?php
-                            for ($i = 1; $i <= $cantPaginas; $i++) {
-                            ?>
-                                <li class="page-item <?php if ($paginaActual == $i) {
-                                                            echo "active";
+                                <li class="page-item <?php if ($paginaActual == 1) {
+                                                            echo "disabled";
                                                         } ?>">
-                                    <a class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . $i ?>"><?= $i ?></a>
+                                    <a <?php if ($paginaActual == 1) {
+                                            echo 'tabindex="-1"';
+                                        } ?> class="back-button cus-button" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual - 1) ?>"><img src="../img/UI/back-button.png" alt=""><span>Anterior</span></a>
                                 </li>
-                            <?php
-                            }
-                            ?>
-                            <li class="page-item <?php if ($cantPaginas == $paginaActual) {
-                                                        echo "disabled";
-                                                    } ?>">
-                                <a <?php if ($cantPaginas == $paginaActual) {
-                                        echo 'tabindex="-1"';
-                                    } ?> class="page-link" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual + 1) ?>">Siguiente</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                                <?php
+                                for ($i = 1; $i <= $cantPaginas; $i++) {
+                                ?>
+                                    <li class="page-item <?php if ($paginaActual == $i) {
+                                                                echo "active";
+                                                            } ?>">
+
+                                        <a class="page-link num" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . $i ?>"><?= $i ?></a>
+                                    </li>
+                                <?php
+                                }
+                                ?>
+                                <li class="page-item <?php if ($cantPaginas == $paginaActual) {
+                                                            echo "disabled";
+                                                        } ?>">
+                                    <a <?php if ($cantPaginas == $paginaActual) {
+                                            echo 'tabindex="-1"';
+                                        } ?> class="next-button cus-button" href="<?= SERVERURL ?>pages/products.php? <?= $variablesGet . "&page=" . ($paginaActual + 1) ?>"><Span>Siguiente</Span><img src="../img/UI/next-button.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
             </div>
         </div>

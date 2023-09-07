@@ -10,7 +10,7 @@
   transition: all 0.3s ease-in-out;
 }
 .carrusel .btn:hover {
-  background-color: #00e5ed;
+  background-color: #0d6efd;
   color: #fff;
 }
 
@@ -20,7 +20,7 @@
 
 /*Changing navbar style*/
 .navbar {
-  background: linear-gradient(to top, #ffffff00, #00e5ed);
+  background: linear-gradient(to top, #00e5ed, #00e5ed9f);
   opacity: 0.9;
 }
 
@@ -41,10 +41,7 @@
 }
 
 /* Changing font for page */
-* {
-  font-family: "Inter", sans-serif;
-  font-family: "Playfair Display", serif;
-}
+
 
 .row h2 {
   font-weight: bold;
@@ -53,7 +50,7 @@
 /* custom button */
 
 .watch_button {
-  --color: #026179;
+  --color: #0d6efd;
   font-family: inherit;
   display: inline-block;
   width: 6em;
@@ -87,7 +84,7 @@
 .watch_button:before {
   top: 100%;
   left: 100%;
-  transition: .3s all;
+  transition: 0.3s all;
 }
 
 .watch_button:hover::before {
@@ -95,10 +92,118 @@
   left: -30px;
 }
 /* footer */
-.footer-links li{
+.footer-links li {
   list-style-type: none;
   transition: all 0.5s ease-out;
 }
-.footer-links li:hover{
+.footer-links li:hover {
   font-weight: bold;
+}
+/*------------------------------------------------- Products.php style --------------------------------------------------*/
+.back-button {
+  display: flex;
+  height: 3em;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: white;
+}
+
+.back-button > img {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.back-button:hover > img {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.back-button:hover {
+  color: 0d6efd;
+  font-weight: bold;
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.next-button {
+  display: flex;
+  height: 3em;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: white;
+}
+
+.next-button > img {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.next-button:hover > img {
+  font-size: 1.2em;
+  transform: translateX(+5px);
+}
+
+.next-button:hover {
+  color: 0d6efd;
+  font-weight: bold;
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(+2px);
+}
+
+.cus-button {
+  background-color: transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.num{
+  color: black;
+  padding: 15px;
+  margin: 2px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.num:hover{
+  color: black;
+  background-color: rgba(227, 227, 227, 0.615);
+  
+}
+.pagination .active {
+  background-color: transparent;
+}
+
+.pagination .active a {
+  border: none;
+}
+
+/* checkbox try */
+.accordion .ckbox {
+  width: 30px;
+}
+/* Title */
+.titulo-products{
+  cursor: default;
+  
 }

@@ -12,9 +12,12 @@ session_start(['name' => 'cliente']);
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">\ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Beachy</title>
 
     <?php
@@ -71,11 +74,6 @@ session_start(['name' => 'cliente']);
                     <li class="nav-item nav-item-icon">
                         <a id="linkCart" class="nav-link " href="car.php"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
-
-                    <!-- <li class="nav-item nav-item-icon">
-              <i class="fa-solid fa-cart-shopping js-show-cart"></i>
-            </li> -->
-
                     <li class="nav-item nav-item-icon">
                         <a id="linkUser" class="nav-link <?= $sesionIniciada ? 'btn-exit-system' : '' ?>" href="<?= $sesionIniciada ? '#' : 'login.php' ?>">
                             <i class="<?= $sesionIniciada ? 'fas fa-power-off' : 'fa-solid fa-user' ?>" title="<?= $sesionIniciada ? 'Cerrar Sesion' : 'Iniciar Sesion/Registrarse' ?>"></i>
@@ -100,45 +98,43 @@ session_start(['name' => 'cliente']);
 
     <script>
         let btn_salir = document.querySelector(".btn-exit-system");
-        
-        if (btn_salir != null)
-        {
+
+        if (btn_salir != null) {
             btn_salir.addEventListener('click', function(e) {
-            e.preventDefault();
-            Swal.fire({
-                title: 'Quieres cerrar sesión?',
-                text: "La sesion actual se cerrará",
-                type: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Salir!',
-                cancelButtonText: 'No, Cancelar'
-            }).then((result) => {
-                if (result.value) {
+                e.preventDefault();
+                Swal.fire({
+                    title: 'Quieres cerrar sesión?',
+                    text: "La sesion actual se cerrará",
+                    type: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Si, Salir!',
+                    cancelButtonText: 'No, Cancelar'
+                }).then((result) => {
+                    if (result.value) {
 
-                    let url = '<?php echo SERVERURL; ?>controladores/cerrarSesionUsuarioControlador.php';
-                    let token = `<?php echo $lc->encryption($_SESSION['token'] ?? "") ?>`;
-let usuario = '<?php echo $lc->encryption($_SESSION['idCliente'] ?? "") ?>';
+                        let url = '<?php echo SERVERURL; ?>controladores/cerrarSesionUsuarioControlador.php';
+                        let token = `<?php echo $lc->encryption($_SESSION['token'] ?? "") ?>`;
+                        let usuario = '<?php echo $lc->encryption($_SESSION['idCliente'] ?? "") ?>';
 
 
-                    let datos = new FormData();
-                    datos.append("token", token);
-                    datos.append("usuario", usuario);
+                        let datos = new FormData();
+                        datos.append("token", token);
+                        datos.append("usuario", usuario);
 
-                    fetch(url, {
-                            method: 'POST',
-                            body: datos
-                        })
-                        .then(respuesta => respuesta.json())
-                        .then(respuesta => {
-                            return alertas_ajax(respuesta);
-                        });
-                }
+                        fetch(url, {
+                                method: 'POST',
+                                body: datos
+                            })
+                            .then(respuesta => respuesta.json())
+                            .then(respuesta => {
+                                return alertas_ajax(respuesta);
+                            });
+                    }
+                });
             });
-        });
         }
-        
     </script>
 
     <!-- Toasts -->
@@ -177,7 +173,6 @@ let usuario = '<?php echo $lc->encryption($_SESSION['idCliente'] ?? "") ?>';
     </div>
 
     <script>
-        
         // Toasts
         let element = document.getElementById("myToast");
 
