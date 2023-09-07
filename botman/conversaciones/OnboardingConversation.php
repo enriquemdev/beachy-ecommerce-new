@@ -9,9 +9,9 @@ class OnboardingConversation extends Conversation
 
     public function askFirstname()
     {
-        $this->ask('Hi, what is your name?', function($answer) {
+        $this->ask('Hola, dime cual es tu nombre por favor', function($answer) {
             $firstName = $answer->getText();
-            $this->say('Nice to meet you '.$firstName);
+            $this->say('Un gusto conocerte '.$firstName);
         });
     }
 

@@ -163,7 +163,7 @@
                            
                             function textToSpeech(text){
                                 utterance = new SpeechSynthesisUtterance(text);
-                                //console.log(synth.getVoices());
+                                console.log(synth.getVoices());
                                 for(let voice of synth.getVoices()){
                                     if(voice.name === 'Microsoft Sabina - Spanish (Mexico)'){
                                         utterance.voice = voice;
